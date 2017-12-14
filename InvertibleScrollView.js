@@ -1,8 +1,6 @@
 'use strict';
 
-import React, {
-  PropTypes,
-} from 'react';
+import React from 'react';
 import {
   ScrollView,
   StyleSheet,
@@ -19,11 +17,6 @@ type DefaultProps = {
 let InvertibleScrollView = React.createClass({
   mixins: [ScrollableMixin],
 
-  propTypes: {
-    ...ScrollView.propTypes,
-    inverted: PropTypes.bool,
-    renderScrollComponent: PropTypes.func.isRequired,
-  },
 
   getDefaultProps(): DefaultProps {
     return {
